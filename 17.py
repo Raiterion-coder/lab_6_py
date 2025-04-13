@@ -57,8 +57,8 @@ while True:
     if choice == '1':
         tema = input("Введите тему доклада: ")
         start = float(input("Введите время начала (например, 9.5 для 9:30): "))
-        duration = float(input("Введите продолжительность (в часах): "))
-        p = Presentation(tema, start, duration)
+        time = float(input("Введите продолжительность (в часах): "))
+        p = Presentation(tema, start, time)
         conference.add_presentation(p)
     elif choice == '2':
         conference.print_schedule()
